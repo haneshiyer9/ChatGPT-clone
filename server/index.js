@@ -19,7 +19,7 @@ app.post('/get-prompt-result', async (req, res) => {
   
       // Make a request to the Longshot API using axios
       const apiResponse = await axios.post(
-        'https://chat-gpt-clone-client.vercel.app/api/generate/instruct',
+        'https://api-v2.longshot.ai/custom/api/generate/instruct',
         { text: prompt },
         {
           headers: {
