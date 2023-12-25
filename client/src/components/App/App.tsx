@@ -1109,7 +1109,7 @@ const App = () => {
     try {
       console.log('Before axios.post');
       // Send a POST request to the API with the prompt in the request body
-      const response = await axios.post('http://localhost:3001/get-prompt-result', {
+      const response = await axios.post('https://chat-gpt-clone-backend.vercel.app/get-prompt-result', {
         prompt: _prompt,
         model: 'gpt', // Set the model value directly to 'gpt'
       });
