@@ -1,10 +1,9 @@
 {
     "version": 2,
     "builds": [
-      { "src": "/frontend/**", "use": "@vercel/static-build" }
+      { "src": "*.js", "use": "@vercel/node" }
     ],
     "routes": [
-      { "src": "/get-prompt-result", "dest": "index.js" },
-      { "handle": "filesystem" }
+      { "src": "/(.*)", "dest": "/" }
     ]
   }
